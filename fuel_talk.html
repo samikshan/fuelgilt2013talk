@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title>Upcoming improvemenets in l10n.kde.org</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7434 2012-05-11 21:06:27Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { /* line numbers */
+  color: grey;
+}
+
+.code {
+  background-color: #eeeeee
+}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="ui/default/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+
+<style type="text/css">
+#currentSlide {display: none;}
+</style>
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+
+</div>
+<div id="footer">
+<h1>Upcoming improvemenets in l10n.kde.org</h1>
+
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+<h1 class="title">Upcoming improvemenets in l10n.kde.org</h1>
+
+<blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Speaker:</th><td class="field-body">Chandan Kumar</td>
+</tr>
+<tr class="field"><th class="field-name">Contact:</th><td class="field-body"><a class="reference external" href="mailto:chandankumar.093047&#64;gmail.com">chandankumar.093047&#64;gmail.com</a></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+
+</div>
+<div class="slide" id="what-i-do">
+<h1>What i do?</h1>
+<ul class="simple">
+<li>GSOC 2013 intern under KDE.</li>
+<li>Hindi translator for various projects.</li>
+<li>Fuel contributor.</li>
+<li>Promote magahi in open source.</li>
+</ul>
+</div>
+<div class="slide" id="what-does-l10n-kde-org-website-do">
+<h1>What does l10n.kde.org website do?</h1>
+<p>Provides a platform for KDE translators, doc-writers and everybody working on the internationalization, localization and documentation of KDE.</p>
+</div>
+<div class="slide" id="recent-features">
+<h1>Recent Features:</h1>
+<ul class="simple">
+<li>Website Interface</li>
+<li>Statistics</li>
+<li>Checks</li>
+<li>Dictionary</li>
+<li>Docs</li>
+</ul>
+</div>
+<div class="slide" id="website-interface">
+<h1>Website Interface:</h1>
+<ul class="simple">
+<li>Provides login interface for translator, language maintainer, site-admin.</li>
+<li>Adding / removing a language with all the details.</li>
+<li>Adding / removing members for the language.</li>
+<li>Marking team as active or inactive.</li>
+</ul>
+</div>
+<div class="slide" id="statistics">
+<h1>Statistics:</h1>
+<ul class="simple">
+<li>Package wise</li>
+<li>Team wise(Based on top 10 teams)</li>
+<li>Modes</li>
+<li>Recent branch</li>
+<li>Global Status</li>
+<li>Partial translation</li>
+</ul>
+</div>
+<div class="slide" id="checks">
+<h1>Checks:</h1>
+<ul class="simple">
+<li>Branch wise pology error checks</li>
+<li>Documentation Errors</li>
+</ul>
+</div>
+<div class="slide" id="dictionary">
+<h1>Dictionary:</h1>
+<ul class="simple">
+<li>Search translation's strings for existing languages.</li>
+<li>Compare Translations.</li>
+<li>What a word means?</li>
+</ul>
+</div>
+<div class="slide" id="docs">
+<h1>Docs:</h1>
+<ul class="simple">
+<li>Translatable Code</li>
+<li>Common mistakes</li>
+<li>Semantic Translations</li>
+<li>Build Systems</li>
+<li>Krazy Checking</li>
+<li>Writing Documentation</li>
+<li>Localization guide</li>
+<li>Lokalize</li>
+<li>Building l10n modules</li>
+<li>Translation How to</li>
+</ul>
+</div>
+<div class="slide" id="upcoming-changes">
+<h1>Upcoming Changes:</h1>
+<ul class="simple">
+<li>LTMT</li>
+</ul>
+</div>
+<div class="slide" id="ltmt">
+<h1>LTMT</h1>
+<ul class="simple">
+<li>Stands for Localization team management tool.</li>
+<li>As an extension of l10n.kde.org.</li>
+</ul>
+</div>
+<div class="slide" id="why-ltmt">
+<h1>Why LTMT?</h1>
+<ul class="simple">
+<li>No Registration process to join language team.</li>
+<li>No idea which translator is translating which file?</li>
+</ul>
+</div>
+<div class="slide" id="features-of-ltmt">
+<h1>Features of LTMT:</h1>
+<ul class="simple">
+<li>Unique Authorization System.</li>
+<li>Easily Join any language team.</li>
+<li>File Reservation System.</li>
+</ul>
+</div>
+<div class="slide" id="unique-authorization-system">
+<h1>Unique Authorization System:</h1>
+<ul class="simple">
+<li>Authenticate with present website through Kde Identity for all level of users</li>
+<li>Categories in different groups based on roles.</li>
+</ul>
+</div>
+<div class="slide" id="easily-join-language-team">
+<h1>Easily join language team:</h1>
+<ul class="simple">
+<li>simply join any language team by clicking by Join team button</li>
+<li>Coordinators of multiple language can view, approve and deny requests.</li>
+</ul>
+</div>
+<div class="slide" id="file-reservation-system">
+<h1>File Reservation System:</h1>
+<ul class="simple">
+<li>View available files for translation and review based on language, branch.</li>
+<li>Request or give up a file or multiple files for translation or review.</li>
+<li>View lists of files translated by user.</li>
+<li>coordinator can assign a file to any user.</li>
+<li>Request approval by site admin, coordinator and previous file owner.</li>
+<li>Anonymous user can request a file for translation.</li>
+<li>Showing whole booking stats to all the users.</li>
+<li>Showing release notification on the top of the page.</li>
+</ul>
+</div>
+<div class="slide" id="application-demo">
+<h1>Application Demo:</h1>
+</div>
+<div class="slide" id="thank-you">
+<h1>Thank You!</h1>
+</div>
+<div class="slide" id="questions-feature-requests">
+<h1>Questions / Feature requests?</h1>
+</div>
+</div>
+</body>
+</html>
