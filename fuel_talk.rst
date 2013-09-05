@@ -1,14 +1,14 @@
 ======================================
-Upcoming improvemenets in l10n.kde.org
+Upcoming improvements in l10n.kde.org
 ======================================
 
         :Speaker: Chandan Kumar
         :Contact: chandankumar.093047@gmail.com
 
 
-What i do?
+What I do?
 ==========
-- GSOC 2013 intern under KDE.
+- GSoC 2013 intern under KDE.
 - Hindi translator for various projects.
 - Fuel contributor.
 - Promote magahi in open source.
@@ -103,7 +103,7 @@ Unique Authorization System:
 
 Easily join language team:
 ==========================
-- simply join any language team by clicking by Join team button
+- Simply join any language team by clicking Join team button
 - Coordinators of multiple language can view, approve and deny requests.
 
 
@@ -112,7 +112,7 @@ File Reservation System:
 - View available files for translation and review based on language, branch.
 - Request or give up a file or multiple files for translation or review.
 - View lists of files translated by user.
-- coordinator can assign a file to any user.
+- Coordinator can assign a file to any user.
 - Request approval by site admin, coordinator and previous file owner.
 - Anonymous user can request a file for translation.
 - Showing whole booking stats to all the users.
